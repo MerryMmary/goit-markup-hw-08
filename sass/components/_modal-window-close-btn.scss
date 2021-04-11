@@ -1,0 +1,23 @@
+.modal-window-close__icon {
+  fill: #000000;
+}
+
+.modal-window-close__btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+
+  &:hover .modal-window-close__icon,
+  &:focus .modal-window-close__icon {
+    fill: var(--accent-color);
+  }
+}

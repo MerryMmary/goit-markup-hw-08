@@ -1,0 +1,16 @@
+.modal-btn {
+  min-width: 200px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+
+  padding: 10px 32px;
+
+  animation-duration: 15000ms;
+  animation-iteration-count: infinite;
+  animation-delay: 2500ms;
+}

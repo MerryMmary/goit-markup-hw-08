@@ -1,0 +1,19 @@
+/* main text color #212121 */
+/*secondary text color #757575 */
+/* contrast-color white #ffffff */
+/*main logo color #2196f3 */
+/*  --section-pt: – padding-top for  section;*/
+/*  --section-pb: – padding-bottom for  section;*/
+:root {
+  --main-font: "Roboto", Sans-Serif;
+  --secondary-font: "Raleway", Sans-Serif;
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --contrast-color: #ffffff;
+  --noactive-link-color: #afb1b8;
+  --section-pt: 94px;
+  --section-pb: 94px;
+}
+
+$main-transition-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);

@@ -1,0 +1,38 @@
+.logo {
+  display: block;
+  @include font(24px, 600, 1.16, 0.03em);
+  font-family: Raleway;
+  color: #212121;
+}
+
+.logo__dark-theme {
+  display: block;
+  color: var(--contrast-color);
+  font-family: "Raleway", Sans-Serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 20px;
+}
+
+.logo--accent-color {
+  color: var(--accent-color);
+}
+
+// .logo {
+//   color: #212121;
+//   font-family: "Raleway", Sans-Serif;
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   letter-spacing: 0.03em;
+
+//   margin-right: 93px;
+//   padding-top: 24px;
+//   padding-bottom: 25px;
+
+//   animation-duration: 2000ms;
+//   animation-iteration-count: 1;
+//}
