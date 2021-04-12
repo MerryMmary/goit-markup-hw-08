@@ -1,3 +1,4 @@
+//desktop
 .hero {
   max-width: 1600px;
   text-align: center;
@@ -12,16 +13,17 @@
   background-position: center;
   background-size: cover;
   background-color: #2f303a;
+}
 
-  &__title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.37;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--contrast-color);
-
-    margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .hero {
+    max-width: 1200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/img-bg-mobile.jpg");
   }
 }

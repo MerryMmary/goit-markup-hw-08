@@ -1,6 +1,6 @@
 .logo {
   display: block;
-  @include font(24px, 600, 1.16, 0.03em);
+  @include font(26px, 600, 1.16, 0.03em);
   font-family: Raleway;
   color: #212121;
 }
@@ -21,6 +21,20 @@
   color: var(--accent-color);
 }
 
+@media screen and (max-width: 767px) {
+  .logo {
+    margin-right: 88px;
+    @include font(24px, 700, 1.14, 0.03em);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 93px;
+    animation-duration: 2000ms;
+    animation-iteration-count: 1;
+  }
+}
 // .logo {
 //   color: #212121;
 //   font-family: "Raleway", Sans-Serif;
@@ -29,10 +43,8 @@
 //   line-height: 1.19;
 //   letter-spacing: 0.03em;
 
-//   margin-right: 93px;
+//
 //   padding-top: 24px;
 //   padding-bottom: 25px;
 
-//   animation-duration: 2000ms;
-//   animation-iteration-count: 1;
 //}
