@@ -77,7 +77,6 @@ footer {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  background-color: rgba(80, 245, 129, 0.4);
   margin: 0 auto;
 }
 
@@ -1031,9 +1030,21 @@ footer {
   padding-bottom: 60px;
 }
 
+.footer-subtitle {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--contrast-color);
+  margin-bottom: 20px;
+}
+
 .footer-wrapper {
+  margin: 0 auto;
   display: flex;
-  align-items: baseline;
 }
 
 .address-list__link {
@@ -1061,28 +1072,6 @@ footer {
   color: var(--contrast-color);
 }
 
-.footer-contacts__wrapper {
-  width: 232px;
-  margin-right: 70px;
-}
-
-.footer-social-networks__wrapper {
-  width: 206px;
-  margin-right: 50px;
-}
-
-.footer-subtitle {
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--contrast-color);
-  margin-bottom: 20px;
-}
-
 .footer-social-networks__wrapper .social-icon-list__icon {
   fill: var(--contrast-color);
 }
@@ -1094,11 +1083,6 @@ footer {
 
 .footer-social-networks__wrapper .social-icon-list__link:hover, .footer-social-networks__wrapper .social-icon-list__link:focus {
   background-color: var(--accent-color);
-}
-
-.mailing-wrapper {
-  min-width: 570px;
-  margin-left: auto;
 }
 
 .mailing-form__user-email {
@@ -1133,6 +1117,55 @@ footer {
   right: 28px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+@media screen and (max-width: 767px) {
+  .footer-wrapper {
+    display: block;
+    text-align: center;
+  }
+  .footer-subtitle {
+    margin-top: 60px;
+  }
+  .mailing-form__user-email {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    align-items: baseline;
+  }
+  .footer-subtitle {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-wrapper {
+    display: flex;
+    align-items: baseline;
+    text-align: left;
+  }
+  .footer-subtitle {
+    margin-top: 0;
+  }
+  .footer-contacts__wrapper {
+    width: 232px;
+    margin-right: 70px;
+  }
+  .footer-social-networks__wrapper {
+    width: 206px;
+    margin-right: 50px;
+  }
+  .mailing-form__user-email {
+    min-width: 360px;
+  }
 }
 
 .filter-list__btn {
