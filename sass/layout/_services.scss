@@ -1,3 +1,9 @@
+@media screen and (max-width: 1199px) {
+  .services {
+    display: none;
+  }
+}
+
 .services {
   padding-top: var(--section-pt);
   padding-bottom: var(--section-pb);
@@ -10,6 +16,7 @@
     position: relative;
 
     width: 370px;
+    height: 294px;
 
     &:not(:last-child) {
       margin-right: 30px;

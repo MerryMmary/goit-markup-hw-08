@@ -1,8 +1,4 @@
-// .advantages {
-// }
 .advantages-list {
-  //display: flex;
-
   &__subtitle {
     font-weight: 700;
     font-size: 14px;
@@ -35,26 +31,6 @@
     margin-bottom: 30px;
   }
 }
-
-//   &__item {
-//     width: calc((100% - 90px) / 4);
-
-//     &:not(:last-child) {
-//       margin-right: 30px;
-//     }
-//   }
-
-//   &__img {
-//     width: 270px;
-//     height: 120px;
-//     background-color: #f5f4fa;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     margin-bottom: 30px;
-//   }
-
-// }
 
 @media screen and (max-width: 767px) {
   .advantages {
