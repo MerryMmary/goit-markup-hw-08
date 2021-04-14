@@ -1,9 +1,7 @@
-.advantages {
-  padding-top: var(--section-pt);
-  padding-bottom: 0;
-}
+// .advantages {
+// }
 .advantages-list {
-  display: flex;
+  //display: flex;
 
   &__subtitle {
     font-weight: 700;
@@ -23,17 +21,12 @@
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
   }
-
-  &__item {
-    width: calc((100% - 90px) / 4);
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+  &__icon {
+    width: 70px;
+    height: 70px;
   }
-
   &__img {
-    width: 270px;
+    width: 100%;
     height: 120px;
     background-color: #f5f4fa;
     display: flex;
@@ -41,9 +34,95 @@
     align-items: center;
     margin-bottom: 30px;
   }
+}
 
-  &__icon {
-    width: 70px;
-    height: 70px;
+//   &__item {
+//     width: calc((100% - 90px) / 4);
+
+//     &:not(:last-child) {
+//       margin-right: 30px;
+//     }
+//   }
+
+//   &__img {
+//     width: 270px;
+//     height: 120px;
+//     background-color: #f5f4fa;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-bottom: 30px;
+//   }
+
+// }
+
+@media screen and (max-width: 767px) {
+  .advantages {
+    padding-top: var(--section-pt-mob);
+  }
+
+  .advantages-list {
+    &__img {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    &__item:not(:last-child) &__text {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-top: var(--section-pt-mob);
+  }
+
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      width: calc((100% - 30px) / 2);
+
+      &:nth-child(2n + 1) {
+        margin-right: 30px;
+      }
+    }
+
+    &__item:not(:nth-last-child(-n + 2)) &__text {
+      margin-bottom: 30px;
+    }
+
+    &__img {
+      width: 354px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: var(--section-pt);
+    padding-bottom: 0;
+  }
+
+  .advantages-list {
+    display: flex;
+
+    &__item {
+      width: calc((100% - 90px) / 4);
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+
+    &__item:nth-last-child(n) &__text {
+      margin-bottom: 0;
+    }
+
+    &__img {
+      width: 270px;
+    }
   }
 }
