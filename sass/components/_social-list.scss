@@ -1,6 +1,6 @@
 .social-icon-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   &__icon {
@@ -30,6 +30,10 @@
     &:hover,
     &:focus {
       background-color: var(--accent-color);
+    }
+
+    .social-icon-list__item:not(:last-child) & {
+      margin-right: 10px;
     }
   }
 }

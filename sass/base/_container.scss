@@ -1,7 +1,8 @@
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  //background-color: rgba($color: #50f581, $alpha: 0.4);
+  background-color: rgba($color: #50f581, $alpha: 0.4);
+  margin: 0 auto;
 
   .main-header & {
     display: flex;
@@ -10,7 +11,7 @@
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
     width: 480px;
     margin: 0 auto;

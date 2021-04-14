@@ -174,12 +174,32 @@
         </section>
 
         <!-- TEAM -->
-        <!-- <section class="team">
+        <section class="team">
             <div class="container">
                 <h2 class="title">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-list__item">
-                        <img class="team-list__img" src="./images/ihor-demyamenko.jpg" alt="Человек улыбается в очках" width="270" height="260">
+                        <picture>
+                            <source srcset="
+                                ./images/ihor-demyamenko-desctop.jpg 1x,
+                                ./images/ihor-demyamenko-desctop@2x.jpg 2x" 
+                                media="(min-width: 1200px)" />
+                            
+                            <source srcset="
+                                ./images/ihor-demyamenko-tablet.jpg 1x,
+                                ./images/ihor-demyamenko-tablet@2x.jpg 2x" 
+                                media="(min-width: 768px)" />
+                            
+                            <source srcset="
+                                ./images/ihor-demyamenko-mobile.jpg 1x,
+                                ./images/ihor-demyamenko-mobile@2x.jpg 2x" 
+                                media="(min-width: 480px)" />
+
+                            <img class="team-list__img" src="./images/ihor-demyamenko-desctop.jpg" alt="Человек улыбается в очках">
+                        </picture>
+
+                        <!-- <img class="team-list__img" src="./images/ihor-demyamenko.jpg" alt="Человек улыбается в очках" width="270" height="260"> -->
+                        
                         <div class="team-list__textwrapper">
                             <h3 class="team-list__subtitle">Игорь Демьяненко</h3>
                             <p class="team-list__text" lang="en">Product Designer</p>
@@ -216,7 +236,24 @@
                         </div>   
                     </li>
                     <li class="team-list__item">
-                        <img class="team-list__img" src="./images/olha-repina.jpg" alt="Красивая блондинка в очках" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="
+                                ./images/olha-repina-desctop.jpg 1x,
+                                ./images/olha-repina-desctop@2x.jpg 2x"/>
+                        
+                            <source media="(min-width: 768px)" srcset="
+                                ./images/olha-repina-tablet.jpg 1x,
+                                ./images/olha-repina-tablet@2x.jpg 2x" />
+                        
+                            <source media="(min-width: 480px)" srcset="
+                                ./images/olha-repina-mobile.jpg 1x,
+                                ./images/olha-repina-mobile@2x.jpg 2x" />
+                        
+                            <img class="team-list__img" src="./images/olha-repina-desctop.jpg" alt="Красивая блондинка в очках">
+                        </picture>
+                        
+                        <!-- <img class="team-list__img" src="./images/olha-repina.jpg" alt="Красивая блондинка в очках" width="270" height="260"> -->
+                        
                         <div class="team-list__textwrapper">
                             <h3 class="team-list__subtitle">Ольга Репина</h3>
                             <p class="team-list__text" lang="en">Frontend Developer</p>
@@ -253,7 +290,24 @@
                         </div>   
                     </li>
                     <li class="team-list__item">
-                        <img class="team-list__img" src="./images/nikolai-tarasov.jpg" alt="Человек улыбается в очках" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="
+                                ./images/nikolai-tarasov-desctop.jpg 1x,
+                                ./images/nikolai-tarasov-desctop@2x.jpg 2x" />
+                        
+                            <source media="(min-width: 768px)" srcset="
+                                ./images/nikolai-tarasov-tablet.jpg 1x,
+                                ./images/nikolai-tarasov-tablet@2x.jpg 2x" />
+                        
+                            <source media="(min-width: 480px)" srcset="
+                                ./images/nikolai-tarasov-mobile.jpg 1x,
+                                ./images/nikolai-tarasov-mobile@2x.jpg 2x" />
+                        
+                            <img class="team-list__img" src="./images/nikolai-tarasov-desctop.jpg" alt="Человек улыбается в очках">
+                        </picture>
+
+                        <!-- <img class="team-list__img" src="./images/nikolai-tarasov.jpg" alt="Человек улыбается в очках" width="270" height="260"> -->
+                        
                         <div class="team-list__textwrapper">
                             <h3 class="team-list__subtitle">Николай Тарасов</h3>
                             <p class="team-list__text" lang="en">Marketing</p>
@@ -290,7 +344,24 @@
                         </div>
                         </li>
                     <li class="team-list__item">
-                        <img class="team-list__img" src="./images/mihael-yermakov.jpg" alt="Брюнет с бородой" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="
+                                ./images/mihael-yermakov-desctop.jpg 1x,
+                                ./images/mihael-yermakov-desctop@2x.jpg 2x" />
+                        
+                            <source media="(min-width: 768px)" srcset="
+                                ./images/mihael-yermakov-tablet.jpg 1x,
+                                ./images/mihael-yermakov-tablet@2x.jpg 2x" />
+                        
+                            <source media="(min-width: 480px)" srcset="
+                                ./images/mihael-yermakov-mobile.jpg 1x,
+                                ./images/mihael-yermakov-mobile@2x.jpg 2x" />
+                        
+                            <img class="team-list__img" src="./images/mihael-yermakov-desctop.jpg" alt="Брюнет с бородой">
+                        </picture>
+
+                        <!-- <img class="team-list__img" src="./images/mihael-yermakov.jpg" alt="Брюнет с бородой" width="270" height="260"> -->
+                        
                         <div class="team-list__textwrapper">
                             <h3 class="team-list__subtitle">Михаил Ермаков</h3>
                             <p class="team-list__text" lang="en">UI Designer</p>
@@ -328,7 +399,7 @@
                     </li>
                 </ul>
             </div>
-        </section>  -->
+        </section> 
         
         <!-- OUR CLIENTS -->
         <!-- <section class="our-clients">

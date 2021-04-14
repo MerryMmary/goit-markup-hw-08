@@ -5,9 +5,6 @@
 }
 
 .team-list {
-  display: flex;
-  justify-content: space-between;
-
   &__subtitle {
     font-weight: 500;
     font-size: 16px;
@@ -35,13 +32,103 @@
   }
 
   &__item {
-    flex-basis: calc((100%-90px) / 4);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0 0 4px 4px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team-list__img {
+    max-width: 450px;
+    height: 460px;
+  }
+  .team-list__item {
+    display: block;
+    margin: 0 auto;
 
     &:not(:last-child) {
-      margin-right: 30px;
+      margin-bottom: 30px;
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .team-list__img {
+    width: 354px;
+    height: 374px;
+  }
+
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      &:nth-child(odd) {
+        margin-right: 30px;
+      }
+      &:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__img {
+    width: 270px;
+    height: 260px;
+  }
+
+  .team-list__item {
+    flex-basis: calc((100% - 90px) / 4);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+//desktop
+// .team-list {
+//   display: flex;
+//   justify-content: space-between;
+
+//   &__subtitle {
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.19;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     color: var(--main-text-color);
+
+//     margin-bottom: 10px;
+//   }
+
+//   &__text {
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 1.19;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     color: var(--secondary-text-color);
+//     margin-bottom: 16px;
+//   }
+
+//   &__textwrapper {
+//     padding: 30px 32px 30px 32px;
+//     background-color: var(--contrast-color);
+//   }
+
+//   &__item {
+//     flex-basis: calc((100%-90px) / 4);
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//       0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0 0 4px 4px;
+
+//     &:not(:last-child) {
+//       margin-right: 30px;
+//     }
+//   }
+// }
