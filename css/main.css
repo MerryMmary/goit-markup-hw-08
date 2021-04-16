@@ -477,6 +477,7 @@ footer {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    overflow: auto;
     z-index: 100;
     max-width: 480px;
     position: fixed;
@@ -521,6 +522,18 @@ footer {
     color: var(--accent-color);
     margin-bottom: 32px;
   }
+}
+
+@media screen and (max-width: 767px) and (max-width: 450px) {
+  .mobile-contacts-list__item:first-child .mobile-contacts-list__link {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .mobile-contacts-list__item:last-child .mobile-contacts-list__link {
     display: inline-block;
     font-size: 24px;
