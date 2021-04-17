@@ -34,7 +34,7 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    overflow: auto;
+    overflow-y: scroll;
     z-index: 100;
     max-width: 480px;
     position: fixed;
@@ -66,6 +66,9 @@
     }
     &:last-child {
       margin-bottom: 302px;
+      @media screen and (max-width: 450px) {
+        margin-bottom: 70px;
+      }
     }
   }
 
