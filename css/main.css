@@ -582,15 +582,6 @@ footer {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .burger-btn {
-    display: none;
-  }
-  .mobile-menu {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .burger-btn {
     display: none;
@@ -1304,6 +1295,11 @@ footer {
   overflow: hidden;
 }
 
+.portfolio-list__item {
+  outline: 1px solid #eeeeee;
+  outline-offset: -1px;
+}
+
 .portfolio-list__overlay {
   position: absolute;
   left: 0;
@@ -1332,7 +1328,6 @@ footer {
 
 .portfolio-list__text-wrapper {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
   border-top: transparent;
 }
 

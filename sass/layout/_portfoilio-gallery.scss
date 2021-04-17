@@ -27,6 +27,11 @@
     overflow: hidden;
   }
 
+  &__item {
+    outline: 1px solid #eeeeee;
+    outline-offset: -1px;
+  }
+
   &__overlay {
     position: absolute;
     left: 0;
@@ -58,7 +63,7 @@
 
   &__text-wrapper {
     padding: 20px 24px;
-    border: 1px solid #eeeeee;
+    //border: 1px solid #eeeeee;
     border-top: transparent;
   }
 }
@@ -84,6 +89,7 @@
   .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+    //flex-grow: 1;
   }
 
   .portfolio-list__item {
