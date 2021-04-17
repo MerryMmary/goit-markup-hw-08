@@ -1379,7 +1379,7 @@ footer {
   .portfolio-list__item:nth-child(2n) {
     margin-right: 0;
   }
-  .portfolio-list__item:nth-last-child(-n + 2) {
+  .portfolio-list__item:last-child {
     margin-bottom: 0;
   }
 }
